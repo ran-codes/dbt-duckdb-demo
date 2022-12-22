@@ -6,12 +6,12 @@ quack_quack:
       extensions:
         - httpfs
         - parquet
-      external_root: 'D://git/scr/dbt_external'
+      external_root: 'D:\git\dbt-duckdb-demo\external\out'
     prod:
       type: duckdb
       path: dbt.duckdb
       extensions:
         - httpfs
         - parquet
-      external_root: '//files.drexel.edu/encrypted/SOPH/UHC/SchnakeMahl_HCUP/Database/Prototype/dbt-external-test/'
+      external_root: '\\files.drexel.edu\encrypted\SOPH\UHC\SchnakeMahl_HCUP\Database\Prototype\dbt-external-test\'
   target: dev
