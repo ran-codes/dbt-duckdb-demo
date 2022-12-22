@@ -1,5 +1,12 @@
 version: 2
 
+sources:
+  - name: external_parquet
+    meta:
+      external_location: "D:\\git\\dbt-duckdb-demo\\external\\in\\{name}.parquet"
+    tables:
+      - name: mtcars
+
 models:
   - name: mtcars_gear_count
     description: 'testing external writing!'
