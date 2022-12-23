@@ -6,6 +6,7 @@ sources:
       external_location: "D:\\git\\dbt-duckdb-demo\\external\\in\\{name}.parquet"
     tables:
       - name: mtcars
+        description: 'mtcars dataset from R as parquet'
 
 models:
   - name: mtcars_gear_count
