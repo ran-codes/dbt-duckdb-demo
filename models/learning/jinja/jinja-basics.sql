@@ -1,25 +1,25 @@
 {#-
 
-#### SETTING VARIABLES ####
+ {##### SETTING VARIABLES ####}
 
 {% set my_str = "hi" %}
 {% set my_num =  3 %}
 {% set my_list = ['fox','bat','cat'] %}
 {% set temp = 45 %}
 
-#### Printing VARIABLES ####
+{#### Printing VARIABLES ####}
 
 {{ my_str }}I want to write jingle for  {{ my_num }}  years!
 {{ my_list[0]}} is the first element in the list
 
-#### Looping  ####
+{#### Looping  ####}
 
 {% for animal in my_list %}
    My favorite anmials is the {{ animal }}!!
 {% endfor %}
 
 
-#### Conditionals  ####
+{#### Conditionals  ####}
 
 {% if temp < 65 %}
   Time for a late!
@@ -28,7 +28,7 @@
 {% endif %}
 
 
-#### Conditionals + loops together  ####
+{#### Conditionals + loops together  ####}
 
 {% set foods = ['carrot', 'hotdog', 'cucumber'] %}
 {%- for food in foods -%}
@@ -40,9 +40,9 @@
   {{ food }} is a {{ food_type }}
 {% endfor %}
 
--#}
 
-#### Dictionary example  ####
+
+{#### Dictionary example  ####}
 {% set webster_dict = {
   "word": "data",
   "speech_part": "noun",
@@ -51,3 +51,4 @@
 
 {{ webster_dict['word'] }} ({{ webster_dict['speech_part'] }}): defined as "{{ webster_dict['definition'] }}"
 
+-#}
