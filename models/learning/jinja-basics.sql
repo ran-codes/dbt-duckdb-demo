@@ -27,10 +27,10 @@
   Time for a swim!
 {% endif %}
 
--#}
+
 #### Conditionals + loops together  ####
 
-{%- set foods = ['carrot', 'hotdog', 'cucumber'] -%}
+{% set foods = ['carrot', 'hotdog', 'cucumber'] %}
 {%- for food in foods -%}
   {%- if food == 'hotdog' -%}
     {%- set food_type = 'snack' -%}
@@ -40,6 +40,14 @@
   {{ food }} is a {{ food_type }}
 {% endfor %}
 
+-#}
 
+#### Dictionary example  ####
+{% set webster_dict = {
+  "word": "data",
+  "speech_part": "noun",
+  "definition": "if you know you know"
+} %}
 
-      
+{{ webster_dict['word'] }} ({{ webster_dict['speech_part'] }}): defined as "{{ webster_dict['definition'] }}"
+
