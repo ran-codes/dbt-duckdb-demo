@@ -1,7 +1,7 @@
 {{ config(materialized='external', format = 'csv') }}
 
 with payments as (
-    select * from {{ source('external_csv', 'raw_payments') }}  
+    select * from {{ source('jaffle_shop', 'raw_payments') }}  
 ),
 
 pivoted as (

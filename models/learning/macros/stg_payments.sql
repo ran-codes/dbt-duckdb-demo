@@ -3,4 +3,4 @@ select
   order_id,
   amount,
   {{cents_to_dollars('amount')}} as amount_usd,
-from {{ source('external_csv', 'raw_payments') }}  
+from {{ source('jaffle_shop', 'raw_payments') }}  

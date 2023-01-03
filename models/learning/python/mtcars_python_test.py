@@ -3,7 +3,7 @@ import polars as pl
 
 def model(dbt, session):
     dbt.config(materialized = "external")
-    mtcars = dbt.source("external_csv", "mtcars")
+    mtcars = dbt.source("R_datasets", "mtcars.parquet")
     
     df_final = (pl.from_arrow(mtcars.arrow())
       .filter(pl.col("gear") > 4)

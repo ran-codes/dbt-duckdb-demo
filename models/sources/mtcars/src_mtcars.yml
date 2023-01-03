@@ -1,0 +1,37 @@
+version: 2
+
+sources:
+  - name: R_datasets
+    meta:
+      external_location: "D:\\git\\dbt-duckdb-demo\\external\\in\\{name}"
+    tables:
+      - name: mtcars.csv
+        description: mtcars datasets from R as csv
+        columns:
+          - name: mpg
+            type: numeric
+            description: 'miles per gallon'
+          - name: cyl
+            type: numeric
+            description: 'number of cylinders in engine'
+          - name: wt
+            type: numeric
+            description: 'weight of car in tons'
+          - name: gears
+            type: numeric
+            description: 'number of gears in drive'
+      - name: mtcars.parquet
+        description: mtcars datasets from R as parquet
+        columns:
+          - name: mpg
+            type: numeric
+            description: 'miles per gallon'
+          - name: cyl
+            type: numeric
+            description: 'number of cylinders in engine'
+          - name: wt
+            type: numeric
+            description: 'weight of car in tons'
+          - name: gears
+            type: numeric
+            description: 'number of gears in drive'

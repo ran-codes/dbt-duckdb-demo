@@ -1,9 +1,9 @@
 version: 2
 
 sources:
-  - name: external_csv
+  - name: jaffle_shop
     meta:
       external_location: "D:\\git\\dbt-duckdb-demo\\external\\in\\{name}.csv"
     tables:
-      - name: mtcars
-        description: mtcars datasets from R as csv
+      - name: raw_orders
+        description: raw_orders from jaffle shop demo

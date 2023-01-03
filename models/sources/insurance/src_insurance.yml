@@ -1,11 +1,11 @@
 version: 2
 
 sources:
-  - name: external_csv
+  - name: health_insurance
     meta:
-      external_location: "D:\\git\\dbt-duckdb-demo\\external\\in\\{name}.csv"
+      external_location: "D:\\git\\dbt-duckdb-demo\\external\\in\\{name}"
     tables:
-      - name: insurance3r2
+      - name: insurance3r2.csv
         description: 'Sample insurance calim prediction dataset from kaggle: https://www.kaggle.com/datasets/easonlai/sample-insurance-claim-prediction-dataset?resource=download'
         columns:
           - name: age
