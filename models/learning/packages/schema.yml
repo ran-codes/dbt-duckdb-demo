@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: example__utils
+    description: 'Testing out some dbt_utils date_spine functionality'
+  - name: customers_daily_summary
