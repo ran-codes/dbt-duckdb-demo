@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: stg_limited_payments
+    description: 'example model to test our limit_data macro and cents_to_dollars macro.'
