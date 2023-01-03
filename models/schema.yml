@@ -7,3 +7,9 @@ sources:
     tables:
       - name: mtcars
         description: 'mtcars dataset from R as parquet'
+  - name: external_csv
+    meta:
+      external_location: "D:\\git\\dbt-duckdb-demo\\external\\in\\{name}.csv"
+    tables:
+      - name: insurance3r2
+        description: 'Sample insurance calim prediction dataset from kaggle: https://www.kaggle.com/datasets/easonlai/sample-insurance-claim-prediction-dataset?resource=download'
