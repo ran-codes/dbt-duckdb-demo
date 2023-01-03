@@ -1,0 +1,12 @@
+version: 2
+
+macros:
+  - name: cents_to_dollars
+    description: A macro to convert number cents to dollars rounded to 2 significant digits
+    arguments:
+      - name: col_name
+        type: int
+        description: The column name of the cents field.
+      - name: decimal_places
+        type: int
+        description: number of significant digits to round to. The default value is 2.
