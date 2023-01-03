@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: insurance_macro_test
+    description: 'Testing out age recoding with a custom macro on dummy insurance information.'

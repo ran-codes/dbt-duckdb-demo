@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: mtcars_macro_test
+    description: 'Testing our dbt on the mtcars dataset. A simple macro is used to mutate a gears_plus_1 columns.'
