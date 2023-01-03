@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: mtcars_python_test
+    description: 'my first python model'

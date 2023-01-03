@@ -1,0 +1,5 @@
+version: 2
+
+models:
+  - name: mtcars_gear_count
+    description: 'testing external writing!'

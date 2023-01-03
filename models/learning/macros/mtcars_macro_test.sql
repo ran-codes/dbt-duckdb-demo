@@ -1,4 +1,4 @@
-{{ config(materialized='external') }}
+{{ config(materialized='external', format = 'csv') }}
 SELECT 
   gear, 
   hp,
