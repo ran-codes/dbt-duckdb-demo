@@ -12,6 +12,4 @@ weight of car in tons
 
 {% docs mtcars_details_gears %}
 number of gears in drive
-
-{{ doc("mtcars_details_mpg") }}'
 {% enddocs %}
