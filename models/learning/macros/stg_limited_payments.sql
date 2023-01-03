@@ -4,7 +4,5 @@ select
   amount,
   {{cents_to_dollars('amount')}} as amount_usd,
 from raw_payments
-{% if target.name == 'dev' %}
-order by RANDOM()
-limit 5
-{% endif %}
+
+{{ limit_data_in_dev()}}

@@ -1,0 +1,9 @@
+version: 2
+
+macros:
+  - name: limit_data_in_dev
+    description: A macro to sample 5 rows from table when in dev
+    arguments:
+      - name: col_name
+        type: int
+        description: The column name of the cents field.
