@@ -1,4 +1,4 @@
 {{ config(materialized='external') }}
 SELECT gear, COUNT(*) AS n
-FROM mtcars
+FROM {{ source('external_csv', 'mtcars') }}  
 GROUP BY gear

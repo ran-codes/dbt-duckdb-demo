@@ -4,5 +4,5 @@ select
   user_id,
   order_date,
   count(*) as n
-from raw_orders
+from {{ source('external_csv', 'raw_orders') }} 
 group by 1,2,3

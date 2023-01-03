@@ -3,9 +3,9 @@ import polars as pl
 
 def model(dbt, session):
     dbt.config(materialized = "external")
-    my_sql_model_df = dbt.ref("mtcars")
+    mtcars = dbt.source("external_csv", "mtcars")
     
-    df_final = (pl.from_arrow(my_sql_model_df.arrow())
+    df_final = (pl.from_arrow(mtcars.arrow())
       .filter(pl.col("gear") > 4)
       .to_pandas())
 

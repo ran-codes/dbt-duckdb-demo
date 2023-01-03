@@ -1,7 +1,7 @@
 {{ config(materialized='external', format = 'csv') }}
 {%- set methods = ['bank_transfer','credit_card', 'coupon', 'gift_card' ] -%}
 with payments as (
-    select * from raw_payments
+    select * from {{ source('external_csv', 'raw_payments') }}  
 ),
 
 pivoted as (

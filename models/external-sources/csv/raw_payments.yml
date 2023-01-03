@@ -1,0 +1,9 @@
+version: 2
+
+sources:
+  - name: external_csv
+    meta:
+      external_location: "D:\\git\\dbt-duckdb-demo\\external\\in\\{name}.csv"
+    tables:
+      - name: raw_payments
+        description: raw_payments from jaffle shop demo
