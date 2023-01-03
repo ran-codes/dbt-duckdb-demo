@@ -1,0 +1,15 @@
+version: 2
+
+macros:
+  - name: recode_age_general_group
+    description:
+      A macro to convert numeric age to general age groups this includes
+
+      - 0-20
+      - 20-60,
+      - 60+
+
+    arguments:
+      - name: age
+        type: int
+        description: The age value to be converted
