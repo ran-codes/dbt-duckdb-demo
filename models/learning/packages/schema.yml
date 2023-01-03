@@ -4,3 +4,4 @@ models:
   - name: example__utils
     description: 'Testing out some dbt_utils date_spine functionality'
   - name: customers_daily_summary
+    description: It is common to want to generate a primary key for each table. In this case, the primary key is the combination of `customer_id` and `order_date`. We use the utils `surrogate_key` macro to generate this primary key.

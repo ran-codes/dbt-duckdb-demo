@@ -1,6 +1,8 @@
 {{ config(materialized='external', format = 'csv') }}
-select user_id,
-order_date,
-count(*)
+select
+  {{ dbt_utils.generate_surrogate_key(['user_id', 'order_date']) }} as id,
+  user_id,
+  order_date,
+  count(*) as n
 from raw_orders
-group by 1,2
+group by 1,2,3
