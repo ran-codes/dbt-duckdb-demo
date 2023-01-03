@@ -3,3 +3,8 @@ version: 2
 models:
   - name: insurance_macro_test
     description: '{{ doc("insurance_macro_test_desc") }}'
+    config:
+      tags: [insurance]
+    meta:
+      owner: '@ran'
+      model_maturity: in dev
