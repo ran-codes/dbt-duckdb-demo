@@ -3,3 +3,7 @@ version: 2
 models:
   - name: stg_payments
     description: 'example model to test our cents_to_dollars macro.'
+    config:
+      tags: [jaffle_shop]
+
+

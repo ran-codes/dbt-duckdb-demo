@@ -2,6 +2,7 @@ version: 2
 
 sources:
   - name: jaffle_shop 
+    tags: ['jaffle_shop']
     description:  '{{ doc("jaffle_shop_desc") }}'
     meta:
       external_location: "D:\\git\\dbt-duckdb-demo\\external\\in\\{name}.csv"
