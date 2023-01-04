@@ -2,14 +2,15 @@ version: 2
 
 models:
   - name: stg_customers
-    columns:
-      - name: customer_id
-        tests:
-          - unique
-          - not_null
-    description: Staging of raw_customers source data. We rename columns to enable merging with other staging tables.
+    description: Information on customers; Customer_id is the tested primary key and there is one unique customer per row.
     config:
       tags: [jaffle_shop]
     meta:
       owner: '@ran'
       model_maturity: in dev
+    columns:
+      - name: customer_id
+        description: primary key for stg_customers.
+        tests:
+          - unique
+          - not_null
