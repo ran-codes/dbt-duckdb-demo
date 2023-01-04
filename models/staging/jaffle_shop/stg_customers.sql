@@ -7,10 +7,10 @@ source as (
 
 staged as (
   select
-    id as cus
+    id as customer_id,
+    first_name,
+    last_name
+   from source 
 )
 
-SELECT 
-  *, 
-  {{recode_age_general_group('age')}} as age_grp,
-FROM {{ source('health_insurance', 'insurance3r2.csv') }}
+select * from staged
