@@ -1,3 +1,7 @@
+{% docs jaffle_shop_desc %}
+a clone of a Postgres application database
+{% enddocs %}
+
 {% docs jaffle_shop_details_id %}
 customer id
 {% enddocs %}
