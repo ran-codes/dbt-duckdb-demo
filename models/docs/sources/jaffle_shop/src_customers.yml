@@ -7,3 +7,13 @@ sources:
     tables:
       - name: raw_customers
         description: raw_customers from jaffle shop demo
+        columns:
+          - name: id
+            type: numeric
+            description: '{{ doc("jaffle_shop_details_id") }}'
+          - name: first_name
+            type: numeric
+            description: '{{ doc("raw_customers_details_first_name") }}'
+          - name: last_name
+            type: numeric
+            description: '{{ doc("raw_customers_details_last_name") }}'

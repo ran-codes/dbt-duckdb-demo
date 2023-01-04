@@ -7,3 +7,16 @@ sources:
     tables:
       - name: raw_orders
         description: raw_orders from jaffle shop demo
+        columns:
+          - name: id
+            type: numeric
+            description: '{{ doc("jaffle_shop_details_id") }}'
+          - name: user_id
+            type: numeric
+            description: '{{ doc("raw_orders_details_user_id") }}'
+          - name: order_date
+            type: date
+            description: '{{ doc("raw_orders_details_order_date") }}'
+          - name: status
+            type: date
+            description: '{{ doc("raw_orders_details_status") }}'

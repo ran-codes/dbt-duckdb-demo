@@ -7,3 +7,16 @@ sources:
     tables:
       - name: raw_payments
         description: raw_payments from jaffle shop demo
+        columns:
+          - name: id
+            type: numeric
+            description: '{{ doc("jaffle_shop_details_id") }}'
+          - name: order_id
+            type: numeric
+            description: '{{ doc("raw_payments_details_order_id") }}'
+          - name: payment
+            type: date
+            description: '{{ doc("raw_payments_details_payment") }}'
+          - name: amount
+            type: numeric
+            description: '{{ doc("raw_payments_details_amount") }}'
